@@ -3,7 +3,7 @@ CC          = gcc
 all:	
 	@for example in $(shell find ./ -name "Exam*.c"); do \
 		echo $$example; \
-		../sc.bak <$$example	>$$example.s; \
+		./sc.exe <$$example >$$example.s; \
 		$(CC) -m32 $$example.s -o $$example.exe; \
 	done
 

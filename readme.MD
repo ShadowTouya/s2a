@@ -8,7 +8,7 @@
     Lines 287-305 in expr.c (Function Call)
 ```
 
-## 2. How to build and run 
+## 2. How to build and run demo.c
 
 ```sh
 iron@Katana:s2a$ sudo apt-get install gcc-multilib g++-multilib
@@ -22,16 +22,20 @@ gcc  -m32 demo.s -o demo
 iron@Katana:s2a$ make run
 
 ./demo 2022 11 12 17 35
+
+iron@Katana:s2a$ cp ./sc ./examples/sc.exe
+iron@Katana:s2a$ make runexams
+
 ```
 
-## 3. Use sc.bak to run the benchmarks in the sub-directory "examples"
+## 4. Use sc.bak to run the benchmarks in the sub-directory "examples"
 
 ```sh
-iron@Katana:s2a$ make
+iron@Katana:s2a$ cp ./sc.bak ./examples/sc.exe
 iron@Katana:s2a$ make runexams
 ```
 
-4. Overview
+## 5. Overview
 
 ```sh
 iron@Katana:s2a$ wc -l `find . -name "*.h"`
@@ -43,7 +47,9 @@ iron@Katana:s2a$ wc -l `find . -name "*.h"`
   41 ./lex.h
   54 ./emit.h
  206 total
+```
  
+```sh
 iron@Katana:s2a$ wc -l `find . -name "*.c"`
   400 ./stmt.c
    99 ./demo.c
@@ -57,7 +63,7 @@ iron@Katana:s2a$ wc -l `find . -name "*.c"`
  1492 total
  ```
  
-## 5. git
+## 6. git
 
 ```sh 
  git clone ???

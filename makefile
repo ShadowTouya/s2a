@@ -8,16 +8,13 @@ all:  $(C_SRC) $(H_SRC)
 	$(CC) -static -o sc $(C_SRC)
 	./sc < demo.c	> demo.s
 	$(CC) -m32 demo.s -o demo
-	make exams
 
 run:
 	./demo 2022 11 12 17 35
 
 
-exams:
-	make -C examples
-	
 runexams:
+	make -C examples
 	make -C examples run	
 
 clean:
