@@ -1,6 +1,6 @@
-# A demo to show the basic idea of a "Simple C compiler"
+# Final Project for SE352
 	
-## 1. Please complete the source code:
+## 1. Please complete the following source code:
 
 ```sh
     Lines 318-322 in stmt.c (Control flow: if statement)
