@@ -10,7 +10,7 @@
 #include "func.h"
 #include "expr.h"
 
-#define START_OFFSET_OF_PARAS   20
+#define START_OFFSET_OF_PARAS   8
 
 static AstFuncDefNodePtr curFuncDef;
 

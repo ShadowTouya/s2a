@@ -332,17 +332,17 @@ void EmitArithmeticNode(AstNodePtr pNode){ // function call is also handled here
 				break;
 			case TK_DIV:
 				/*********************************
-				Lab
+				Lab    // Use ecx. Don't use ebx any more.  See EmitPrologue(int stksize) in emit.c
 					movl  a, %eax
 					cdq
-					movl  b, %ebx
-					idivl  %ebx
+					movl  b, %ecx
+					idivl  %ecx
 					movl  %eax, -16(%ebp)
 				*********************************/	
 				EmitAssembly("movl %s, %%eax",GetAccessName(pNode->kids[0]));
 				EmitAssembly("cdq");
-				EmitAssembly("movl %s, %%ebx",GetAccessName(pNode->kids[1]));
-				EmitAssembly("idivl %%ebx");
+				EmitAssembly("movl %s, %%ecx",GetAccessName(pNode->kids[1]));
+				EmitAssembly("idivl %%ecx");
 				EmitAssembly("movl %%eax, %s",GetAccessName(pNode));
 				break;
 			}

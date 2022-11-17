@@ -5,8 +5,9 @@ main(argc, argv, env){
 	int second;
 
 	hour = 10;
-	minute = 11;
-	second = 12;
+	second = 120;
+	
+	minute = (second + hour * 3600) / 60;
 	
 	output(hour);
 	output(minute);

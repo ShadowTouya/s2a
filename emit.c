@@ -15,9 +15,10 @@ void EmitPrologue(int stksize){
 	subl $12, %esp
 	**************************/
 	EmitAssembly("pushl %%ebp");
-	EmitAssembly("pushl %%ebx");
-	EmitAssembly("pushl %%esi");
-	EmitAssembly("pushl %%edi");
+	// We don't use these registers in our assembly now.
+	// EmitAssembly("pushl %%ebx");
+	// EmitAssembly("pushl %%esi");
+	// EmitAssembly("pushl %%edi");
 	EmitAssembly("movl %%esp, %%ebp");
 	if (stksize != 0){
 		EmitAssembly("subl $%d, %%esp",stksize);
@@ -38,9 +39,9 @@ void EmitEpilogue(void){
 	//EmitAssembly("movl $0, %%eax");
 	//---------------------------------
 	EmitAssembly("movl %%ebp, %%esp");
-	EmitAssembly("popl %%edi");
-	EmitAssembly("popl %%esi");
-	EmitAssembly("popl %%ebx");
+	// EmitAssembly("popl %%edi");
+	// EmitAssembly("popl %%esi");
+	// EmitAssembly("popl %%ebx");
 	EmitAssembly("popl %%ebp");
 	EmitAssembly("ret");
 }
