@@ -271,9 +271,9 @@ char  *  GetAccessName(AstNodePtr pNode){
 			else { // global variables, sum, oddSum, a,b,i
 				snprintf(pNode->accessName, MAX_ID_LEN+1, "%s", pNode->value.name);
 			}
-		}else if(pNode->op == TK_NUM){ // 20,15
+		}else if(pNode->op == TK_NUM){ // constant, $20,$15
 			snprintf(pNode->accessName, MAX_ID_LEN+1, "$%d", pNode->value.numVal);
-		}else{	// temporary variables, a+b
+		}else{	// temporary variables, a+b -4(%ebp) -8(%ebp)
 			snprintf(pNode->accessName, MAX_ID_LEN+1, "%d(%%ebp)", pNode->offset);
 		}
 		return pNode->accessName;

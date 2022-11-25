@@ -1,0 +1,23 @@
+<Project>
+  <Name>s2a</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>class</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>main</Name>
+        <Access>Public</Access>
+        <Location left="42" top="38" />
+        <Size width="226" height="227" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">int main()</Member>
+        <Member type="Method">void output_library_func()</Member>
+        <Member type="Method">static void attach_our_library()</Member>
+        <Member type="Method">static char NextCharFromMem()</Member>
+        <Member type="Method">static char NextCharFromStdin()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
