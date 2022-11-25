@@ -1,13 +1,13 @@
 <Project>
   <Name>s2a</Name>
-  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.ClassDiagram" assembly="NClass.DiagramEditor, Version=2.8.0.2, Culture=neutral, PublicKeyToken=null">
     <Name>class</Name>
     <Language>CSharp</Language>
     <Entities>
       <Entity type="Class">
         <Name>main</Name>
         <Access>Public</Access>
-        <Location left="42" top="38" />
+        <Location left="50" top="32" />
         <Size width="226" height="227" />
         <Collapsed>False</Collapsed>
         <Member type="Method">int main()</Member>
@@ -18,6 +18,7 @@
         <Modifier>None</Modifier>
       </Entity>
     </Entities>
+    <Containers />
     <Relationships />
   </ProjectItem>
 </Project>
