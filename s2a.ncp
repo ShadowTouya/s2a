@@ -7,7 +7,7 @@
       <Entity type="Class">
         <Name>main</Name>
         <Access>Public</Access>
-        <Location left="50" top="32" />
+        <Location left="49" top="38" />
         <Size width="226" height="227" />
         <Collapsed>False</Collapsed>
         <Member type="Method">int main()</Member>

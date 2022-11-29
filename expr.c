@@ -191,7 +191,7 @@ static AstNodePtr AdditiveExpression(void){
 		Value value;
 		AstNodePtr expr;
 		memset(&value,0,sizeof(value));
-		snprintf(value.name,MAX_ID_LEN,"t%d",NewTemp());
+		snprintf(value.name,MAX_ID_LEN,"t%d",NewTemp());//t is a temporary variable on the stack to save the result of a+b: t = a+b
 		expr = CreateAstNode(curToken.kind,&value,NULL,NULL);
 		expr->offset = GetFrameOffset();
 		NEXT_TOKEN;

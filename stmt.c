@@ -352,7 +352,7 @@ void   EmitStatementNode(AstStmtNodePtr stmt){
 		EmitArithmeticNode(stmt->expr);
 		if(stmt->kids[0] && stmt->expr){
 			EmitAssembly("movl %s, %%eax",GetAccessName(stmt->expr));
-			EmitAssembly("movl %%eax, %s",GetAccessName(stmt->kids[0]));
+			EmitAssembly("movl %%eax, %s",GetAccessName(stmt->kids[0]));// t= a+b, sum = t
 		}
 		break;
 	case TK_INPUT:	//input(id);
